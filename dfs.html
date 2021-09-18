@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>acom.danakkadatcom</title>
+        <meta charset="UTF-8">
+
+        <!-- CSS : 내부 internal style sheet 방법
+         색깔표현 Red Green Blue이용 0~255   a 투명도 추가가능 0~1-->
+         <!--font - family 글꼴 , 글꼴유형(고딕,명조,필기....)
+             font-weight 굵기 100~900 normal,bold.....
+            line-height (글자의 줄높이 지정): 크기단위or배수-->
+
+        <style>
+            h1{color:rgba(110,150,225,0.5);}
+            h1{font-size: 2rem;}
+            p{font-size: 16px;}
+            p{font-weight: 900;}
+            p{line-height: 3;} /* 줄높이는 폰트사이즈보다 더커야 좋음!! 
+                                 안그러면 겹침..__ 배수단위로 이용하는 경우가 많음 */
+            p{font-family: Georgia, 'Times New Roman', Times, serif;}
+
+        </style>
+
+         <!-- CSS : 외부 External style sheet 방법-->
+        <link href="styleh2.css" rel="stylesheet">
+
+
+        
+    </head>
+   
+    <!--이 밑부터는 내용!! body-->
+    <body>
+    <h1 style="position: static;"> 슬기로운 병영생활</h1>
+    <h1>만약에 h1이 두개면 둘다 바뀌나? ㅇㅇ 그렇네.</h1>
+        <h2>로그인 페이지</h2>
+
+        <!-- CSS : Inline style
+        모든 태그에서 공통적으로 사용할수 있는 속성:글로벌 속성 GL OBAI
+         body 내부에서 태그 안에 style 속성이용
+        HEX(16진수이용) #RRGGBB  16진수:0~f ff=f 중복되는건 생략가능(같은 색 내에서)-->
+
+         <p style="color: #f50;"> 로그인 할꺼야 말꺼야</p>
+
+         <!--CSS : 폰트 사이즈 바꾸기-->
+         <p>Font size</p>
+
+    </body>
+</html>
+
+
+<!--HTML 과 CSS 디버깅(오류를 찾아 바로잡기)
+    웹페이지에서 F12이용 __ elenments 탭에서 구조적으로 파악.
+    문제가 있는곳 누른후 아래의 styles 탭 클릭 __ 적용된 CSS코드 파악가능.
+    OR 저장을 잘했는지 확인!!
+    OR HTML 과 CSS 파일이 잘 연결되었는지 확인!! ex)link태그를 까먹음;; / link파일의 경로를 잘못 설정함.
+    LAST F12의 style 에서 CSS의 취소선 있는지 확인!
+-->
